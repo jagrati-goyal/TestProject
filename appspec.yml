@@ -1,8 +1,20 @@
 version: 0.0
 os: linux
+files:
+  - source: /target/hello-world-maven.war
+    destination: /usr/share/tomcat/webapps
+    overwrite: true
+
+
+permissions:
+  - object: /
+    pattern: "**"
+    mode: 755
+    owner: tomcat
+    group: tomcat
 
 hooks:
-  BeforeInstall:
+  ApplicationStart:
     - location: install.sh
-      timeout: 300
+      timeout: 60
       runas: root
