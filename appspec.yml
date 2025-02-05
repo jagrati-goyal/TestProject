@@ -1,5 +1,10 @@
 version: 0.0
 os: linux
+files:
+  - source: /target/TestProject.war
+    destination: /usr/share/tomcat/webapps
+    overwrite: true
+
 hooks:
   BeforeInstall:
     - location: install.sh
