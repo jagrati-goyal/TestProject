@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /target/hello-world-maven.war
+  - source: /target/TestProject.war
     destination: /usr/share/tomcat/webapps
     overwrite: true
 
