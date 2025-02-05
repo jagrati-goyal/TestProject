@@ -1,16 +1,5 @@
 version: 0.0
 os: linux
-files:
-  - source: /target/TestProject.war
-    destination: /usr/share/tomcat/webapps
-    overwrite: true
-
-permissions:
-  - object: /
-    pattern: "**"
-    mode: 755
-    owner: tomcat
-    group: tomcat
 
 hooks:
   BeforeInstall:
