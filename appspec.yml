@@ -14,7 +14,7 @@ os: linux
 #    group: tomcat
 
 hooks:
-  ApplicationStart:
+  BeforeInstall:
     - location: install.sh
       timeout: 60
       runas: root
