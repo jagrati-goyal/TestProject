@@ -1,0 +1,6 @@
+/.smarttomcat/
+/.mvn/
+/.idea/
+/logs/
+/conf/
+/work/
